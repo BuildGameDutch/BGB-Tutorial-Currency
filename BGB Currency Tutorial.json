@@ -1,9 +1,9 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 218,
+    "build": 221,
     "major": 5,
-    "minor": 4,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -65,7 +65,6 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
         "file": "default_bg_sm.png",
         "kind": "image",
         "metadata": "",
@@ -74,7 +73,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/White Square Decorated Button_Hovered.png",
         "kind": "image",
         "metadata": "",
@@ -87,7 +85,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/White Square Decorated Button_Idle.png",
         "kind": "image",
         "metadata": "",
@@ -100,7 +97,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/White Square Decorated Button_Pressed.png",
         "kind": "image",
         "metadata": "",
@@ -121,6 +117,53 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
           "name": "mononoki-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/Red Button With Metal Frame_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Metal Frame_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b22a9a1823c086427abcdbec14ef49d5a49e6999d8970476bdb7c022b62d8dcc_Red Button With Metal Frame_Hovered.png",
+          "name": "Red Button With Metal Frame_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Metal Frame_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Metal Frame_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c89bb37a1b97b101b601ba39bce50d74964264704d0644735a08c0986e122294_Red Button With Metal Frame_Idle.png",
+          "name": "Red Button With Metal Frame_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Red Button With Metal Frame_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Metal Frame_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ff00ce0a7031e00560a3844ca90fbf73a45c42c8f6659e018110fc8c45c9982e_Red Button With Metal Frame_Pressed.png",
+          "name": "Red Button With Metal Frame_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Charm-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Charm-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/668523d3d2bb73faa358e1ebafa55f43d2760f8abbe99aa15476121c1bcc7eb6_Charm-Regular.ttf",
+          "name": "Charm-Regular.ttf"
         }
       }
     ],
@@ -166,7 +209,23 @@
         {
           "name": "PlayerInventory",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Bread",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Hat",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Potion",
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ],
       "instances": [
@@ -179,8 +238,8 @@
           "name": "TotalGoldText",
           "persistentUuid": "564e47fb-a971-4032-8587-a66a9ebedfcb",
           "width": 0,
-          "x": 1050,
-          "y": 30,
+          "x": 380,
+          "y": 175,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -195,8 +254,8 @@
           "name": "TotalGoldLabel",
           "persistentUuid": "975ca5f3-1385-47dd-8e26-d9952b0959f1",
           "width": 0,
-          "x": 850,
-          "y": 30,
+          "x": 227,
+          "y": 175,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -278,6 +337,38 @@
           "x": 910,
           "y": 460,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "InventoryHeaderLabel",
+          "persistentUuid": "45b610e9-b40d-40ce-ad01-5f85f09c43e5",
+          "width": 0,
+          "x": 240,
+          "y": 86,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "WorkMinesButton",
+          "persistentUuid": "c92efd6b-39e4-49c6-8221-f05c6001d474",
+          "width": 0,
+          "x": 155,
+          "y": 640,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -732,6 +823,132 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "InventoryHeaderLabel",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Inventory",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 42,
+            "g": 87,
+            "r": 139
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Inventory",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "139;87;42"
+          }
+        },
+        {
+          "assetStoreId": "e80b6352d9f27049db858db6a22ad1351febb242a738de07155a6ac8301ea5c5",
+          "name": "WorkMinesButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 0,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0.2
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 0,
+              "height": 54,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Red Button With Metal Frame_Hovered.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 998
+            },
+            "Idle": {
+              "bottomMargin": 0,
+              "height": 54,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Red Button With Metal Frame_Idle.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 998
+            },
+            "Label": {
+              "bold": true,
+              "italic": true,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Work the Mines +50g",
+              "font": "Charm-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": true,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": true,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Work the Mines +50g",
+                "font": "Charm-Regular.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 40,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 0,
+              "height": 54,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Red Button With Metal Frame_Pressed.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 998
+            }
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -760,6 +977,12 @@
           },
           {
             "objectName": "StoreHeaderLabel"
+          },
+          {
+            "objectName": "InventoryHeaderLabel"
+          },
+          {
+            "objectName": "WorkMinesButton"
           }
         ]
       },
@@ -825,7 +1048,66 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerInventory.Potion",
+                "+",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Work the Mines Button",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "WorkMinesButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerGold",
+                "+",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TotalGoldText",
+                "Text",
+                "=",
+                "PlayerGold"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
