@@ -1475,7 +1475,7 @@
               "parameters": [
                 "PlayerGold",
                 ">=",
-                "StoreItems.Potion.Cost"
+                "50"
               ]
             }
           ],
@@ -1508,7 +1508,143 @@
               "parameters": [
                 "PlayerGold",
                 "-",
-                "StoreItems.Potion.Cost"
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TotalGoldText",
+                "Text",
+                "=",
+                "PlayerGold"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BuyHatButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerGold",
+                ">=",
+                "150"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerInventory.Hat",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NumHat",
+                "Text",
+                "=",
+                "PlayerInventory.Hat"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerGold",
+                "-",
+                "150"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TotalGoldText",
+                "Text",
+                "=",
+                "PlayerGold"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BuyBreadButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerGold",
+                ">=",
+                "25"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Inventory::Add"
+              },
+              "parameters": [
+                "",
+                "\"UserInventory\"",
+                "\"bread\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NumBread",
+                "Text",
+                "=",
+                "ToString(Inventory::Count(\"UserInventory\",\"bread\"))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerGold",
+                "-",
+                "25"
               ]
             },
             {
