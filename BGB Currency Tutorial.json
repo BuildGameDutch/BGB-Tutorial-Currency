@@ -174,62 +174,7 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [
-    {
-      "name": "StoreItems",
-      "type": "structure",
-      "children": [
-        {
-          "name": "Bread",
-          "type": "structure",
-          "children": [
-            {
-              "name": "Cost",
-              "type": "number",
-              "value": 25
-            },
-            {
-              "name": "DisplayName",
-              "type": "string",
-              "value": "Food"
-            }
-          ]
-        },
-        {
-          "name": "Hat",
-          "type": "structure",
-          "children": [
-            {
-              "name": "Cost",
-              "type": "number",
-              "value": 125
-            },
-            {
-              "name": "DisplayName",
-              "type": "string",
-              "value": "Hat"
-            }
-          ]
-        },
-        {
-          "name": "Potion",
-          "type": "structure",
-          "children": [
-            {
-              "name": "Cost",
-              "type": "number",
-              "value": 50
-            },
-            {
-              "name": "DisplayName",
-              "type": "string",
-              "value": "Potion"
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "variables": [],
   "layouts": [
     {
       "b": 209,
@@ -669,17 +614,6 @@
               ]
             }
           ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "GoldCoin",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
         },
         {
           "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
@@ -1365,9 +1299,6 @@
           },
           {
             "objectName": "BGImage"
-          },
-          {
-            "objectName": "GoldCoin"
           },
           {
             "objectName": "BuyPotionButton"
